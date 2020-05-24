@@ -1,0 +1,12 @@
+{
+  "name": "authenticationsystem",
+  "version": "1.0.0",
+  "description": "Authentication system that will be a starter to all the webapps",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dhanush Mukhi",
+  "license": "ISC"
+}
