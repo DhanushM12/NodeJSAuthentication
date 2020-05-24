@@ -1,0 +1,21 @@
+<h1 class="col-sm-4">
+  User Sign In
+</h1>
+
+<form action="/users/create-session" method="POST">
+  <label>Email</label>
+  <input type="email" name="email" placeholder="Email" required />
+  <label>Password</label>
+  <input type="password" name="password" placeholder="Password" required />
+  <div>
+    <%- recaptcha %>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign In</button>
+</form>
+<p>
+  <a href="/users/forgot-password">Forgot Password</a>
+</p>
+
+<p>
+  <a href="/users/auth/google">Google Sign In/Sign Up</a>
+</p>

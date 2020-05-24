@@ -1,0 +1,30 @@
+<h1 class="col-sm-4">
+  User Registeration Sign Up Form
+</h1>
+
+<form action="/users/create" method="post">
+  <label for="inputName">Name</label>
+  <input type="text" name="name" placeholder="Your Name" required />
+  <label for="inputEmail">Email</label>
+  <input type="email" name="email" placeholder="Your Email" required />
+  <label>Password</label>
+  <input type="password" name="password" placeholder="Your Password" required />
+  <label>Confirm Password</label>
+  <input
+    type="password"
+    name="confirm_password"
+    placeholder="Confirm Password"
+    required
+  />
+
+  <div>
+    <%- recaptcha %>
+  </div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+  </div>
+</form>
+
+
+  <P>
+    <a href="/users/auth/google">Google Sign In/Sign Up</a>
+  </P>
